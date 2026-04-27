@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sinemalarım - Film Önerileri</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎬 Sinemalarım</h1>
+            <p>Harika filmler keşfet ve öneriler al!</p>
+        </header>
+
+        <div class="search-section">
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Film adı yazın...">
+                <button id="searchBtn">🔍 Ara</button>
+                <button id="randomBtn">🎲 Rastgele</button>
+            </div>
+        </div>
+
+        <div id="loading" class="loading">Yükleniyor...</div>
+
+        <div id="moviesContainer" class="movies-container"></div>
+
+        <div id="movieDetail" class="movie-detail">
+            <div class="detail-content">
+                <button id="closeBtn" class="close-btn">✕</button>
+                <img id="detailPoster" src="" alt="Film Posteri">
+                <div class="detail-text">
+                    <h2 id="detailTitle"></h2>
+                    <p><strong>Yıl:</strong> <span id="detailYear"></span></p>
+                    <p><strong>IMDb Puanı:</strong> <span id="detailRating"></span>/10</p>
+                    <p><strong>Tür:</strong> <span id="detailType"></span></p>
+                    <p><strong>Oyuncular:</strong> <span id="detailActors"></span></p>
+                    <p><strong>Yönetmen:</strong> <span id="detailDirector"></span></p>
+                    <p><strong>Özet:</strong></p>
+                    <p id="detailPlot"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
